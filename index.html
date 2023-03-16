@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤍Quieres Casarte Conmigo🤍</title>
+    <style>
+        .body {
+        background-color: darkred;
+        text-align: center;
+        }
+
+        .body__title {
+            color:white;
+        }
+
+        .body__img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+
+    
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body__title">🤍Quieres Casarte Conmigo🤍</h1>
+    <img src="https://lastfm.freetls.fastly.net/i/u/ar0/c52b20b1a596471c9083476c26378511.jpg" alt="Eres lo que mas deseo como Shrek a Fiona" class="body__img"/>
+    <button id="yes">💍Si quiero💍</button>
+    <button id="no">😭No quiero😭</button>
+
+    <script>
+        const vutonSi = document.getElementById('yes');
+        const vutonNo = document.getElementById('no');
+
+        const SomosEsposos = () => {
+            alert('💞Ahora somos esposos💞');
+            alert('💘Gracias por estar en mi vida mi mundo entero, enserio eres lo mejor de mi vida💘')
+            location.href = 'https://www.youtube.com/watch?v=nyuo9-OjNNg';
+        };
+
+        const Nuncamedigasqueno = () => {
+           vutonNo.style.position = 'absolute';
+           vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+           vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+        };
+
+        vutonSi.addEventListener('click', SomosEsposos)
+        vutonNo.addEventListener('mouseover', Nuncamedigasqueno)
+    </script>
+</body>
+
+</html>
